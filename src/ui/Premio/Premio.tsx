@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 import { useNavigate, useParams } from 'react-router-dom';
 
-const codigo = ["123456789", "987654321", "1122334455", "5566778899"];
+const codigo = ["fre-7890", "fre-2313", "fre-4778"];
 
 export default function Premio () {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export default function Premio () {
   }, [id]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-pink-900 via-blue-900 to-pink-900 relative overflow-hidden">
       {/* Confetti */}
       {confettiActive && (
         <Confetti
@@ -77,7 +77,7 @@ export default function Premio () {
                 <div className="text-6xl mr-4 float">🎁</div>
                 <div className="text-left">
                   <p className="text-lg text-gray-300">Has ganado</p>
-                  <p className="text-2xl sm:text-3xl md:text-5xl font-bold text-yellow-400">$10,000</p>
+                  <p className="text-2xl sm:text-3xl md:text-5xl font-bold text-yellow-400">$8,000</p>
                   <p className="text-lg text-gray-300">pesos colombianos</p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function Premio () {
                 </div>
                 <div className="flex items-start">
                   <span className="bg-yellow-400 text-black rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
-                  <p className="text-gray-300">¡Disfruta de tus $10,000 en productos!</p>
+                  <p className="text-gray-300">¡Disfruta de tus $8,000 en productos!</p>
                 </div>
               </div>
             </div>
